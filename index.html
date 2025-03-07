@@ -1,35 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Seu Nome</h1>
-        <p>Web Designer | Identidade Visual</p>
-    </header>
-    
-    <section id="portfolio">
-        <h2>Meus Trabalhos</h2>
-        <div class="projetos">
-            <div class="projeto">
-                <img src="projeto1.jpg" alt="Projeto 1">
-                <p>Descrição do projeto 1</p>
-            </div>
-            <div class="projeto">
-                <img src="projeto2.jpg" alt="Projeto 2">
-                <p>Descrição do projeto 2</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato pelo WhatsApp:</p>
-        <a href="https://wa.me/seu-numero" target="_blank">Fale comigo</a>
-    </section>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#portfolio, #contato {
+    padding: 40px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+a:hover {
+    background: #218838;
+}
